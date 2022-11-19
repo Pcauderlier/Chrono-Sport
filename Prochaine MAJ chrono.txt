@@ -1,0 +1,17 @@
+Fonctions a rajouter :
+
+- Musique sur le 3 2 1
+	
+- Forcer la case Nom de l'exercice / empecher d'avoir 2 fois le meme nom / reset le nom a chaque fois au'on ajoute un exe
+
+- ameliorer le design : Boutons de chrono rond et Interface centree
+
+- la touche espace lance le next sur le chrono
+
+- chronometrer la seance entiere
+
+- Ajouter une possibliter de descriptions du mouvement
+
+- Possibiliter de modifier les Exercice dj crer directement dans l'interface HTML
+
+- Pre-enregistrer les seances pull/push/leg/abdo

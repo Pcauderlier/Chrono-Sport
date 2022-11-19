@@ -1,0 +1,131 @@
+html, body {
+  height: 100%;
+  width : 100%;
+}
+#bloc-page
+{
+	display : flex;
+	height : 100%;
+	width : 100%;
+	
+}
+
+nav 
+{
+	width : 35%;
+	height : auto;
+	display : flex;
+	flex-wrap : wrap;
+	border : 3px black solid;
+	overflow : auto;
+}
+
+#pause
+{
+	height : 5%;
+	/*width : 100%;*/
+	margin : 10px;
+
+}
+#formulaire
+{
+	width : 100%;
+	
+	margin : 10px;
+	overflow : auto;
+}
+#nom_exe
+{
+	width : 50%;
+}
+.ligne_formulaire
+{
+	margin : 5px;
+}
+
+#liste_exercices
+{
+	width : 100%;
+	
+	margin : 10px;
+	list-style : none ;
+	border : 1px black solid;
+	overflow : auto;
+	padding : 5px;
+}
+#liste_exercices li
+{
+	width : 95%;
+	
+	margin-top : 8px;
+	margin-bottom : 8px;
+	margin-left : 3px;
+	margin-right : 3px;
+	border : 1px black solid;
+}
+.affichage_exercices span
+{
+	text-align : center;
+	font-weight : bold;
+	font-size : 1.3em;
+}
+#boite 
+{
+	width :100%;
+	height : 100%;
+	display : flex;
+	flex-direction : collum;
+	flex-wrap : wrap;
+	
+	
+}
+
+
+h1
+{ 
+	width : 100%;
+	height : 50px;
+	text-align:center;
+}
+
+#chiffres-chrono
+{
+	font-size : 5em;
+	width : 60%;
+	height : 200px;
+	border : 3px black solid;
+	text-align : center;
+	
+	padding : 30px;
+	margin : 30px;
+	border-radius : 100%;
+	background-color : red ;
+}
+input
+{
+	width : 40px;
+}
+.bouton_chrono
+{
+	margin : 30px;
+	height : 150px;
+	width : 150px;
+	font-size : 1.5em;
+	border : 3px black solid;
+	border-radius : 100%;
+	background-color : green;
+	
+}
+.bouton_chrono:hover
+{
+	font-weight : bold;
+	text-decoration : underline;
+}
+#bouton_chrono
+{
+	align-items : center;
+}
+#dure_exe
+{
+	display : none;
+}

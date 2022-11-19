@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8"/>
+		<title> Chrono interactif </title>
+		<link rel="stylesheet" href="chrono2.0.css"/>
+	</head>
+	<body>
+		<audio id='audio' src='countdown.wav'></audio>
+		<div id="bloc-page">
+			<nav>
+				<div id="pause" >Temps de pause entre exe 
+					<input type="number" id="pause-min" name="pause-min" value="0" min="0" step="1"></input> 
+					 : 
+					 <input type="number" id="pause-sec" name="pause-sec" value="0" min="0" step="1"></input> 
+				</div>
+				<div id="formulaire"> 
+					<form method="post" action="#" onsubmit="return valider()">
+						<fieldset>
+						<legend> <strong>Ajouter un exercice</strong></legend>
+						<div class="ligne_formulaire">
+							<label for="nom_exe"> Nom de l'exercice : </label>
+							<input type="text" name="nom_exe" id="nom_exe" placeholder="EX: Pompes" ></input>
+						</div>
+						<div class="ligne_formulaire">
+							<label for="nombre_rep"> Nombre de repetitions : </label>
+							<input type="number" name="nombre_rep" id="nombre_rep" min="0" step="1" value="1"></input>						
+						</div>
+						<div class="ligne_formulaire">
+							<label for="temps_pause_min"> Temps de pause entre repetitions (min : sec): </label>
+							<input type="number" name="temps_pause_min" id="temps_pause_min" min="0" max="59" step="1" value="0"></input>
+							 : 
+							<input type="number" name="temps_pause_sec" id="temps_pause_sec" min="0" max="59" step="1" value="0"></input>
+						</div>
+						<div class="ligne_formulaire">
+							<label for="need_timer"> Faut-il un minuteur pour l'exercice ? </label>
+							<input type="checkbox" name="need_timer" id="need_timer" ></input>
+						</div>
+						<div id="dure_exe" class="ligne_formulaire">
+							<label for="dure_exe_min"> Duree de l'exercice (min : sec): </label>
+							<input type="number" name="dure_exe_min" id="dure_exe_min" min="0" max="59"step="1" value="0"></input>
+							 : 
+							<input type="number" name="dure_exe_sec" id="dure_exe_sec" min="0" max="59" step="1" value="0"></input>
+						</div>	
+						
+					</fieldset>
+					</form>
+					<div class="ligne_formulaire">
+						<button id="add_exe"> AJOUTER </button> <button id="start"> START </button>
+					</div>
+				</div>
+				
+				
+				<ul id="liste_exercices">
+					
+				</ul>
+				
+			</nav>
+			<div id="boite">
+				<h1 id="titre">Exercice en cours </h1>
+				<div id="chiffres-chrono">00 : 00</div>
+				<div id="boutton_chrono">
+					<button id="prev" class="bouton_chrono"> PREVIOUS </button>
+					<button id="reset" class="bouton_chrono" > RESET </button>
+					<button id="play" class="bouton_chrono"> PLAY / PAUSE </button>
+					<button id="next" class="bouton_chrono"> NEXT </button>
+				</div>
+			</div>
+		</div>	
+		
+		
+		<script src="chrono2.0.js"></script>
+	</body>
+	</html>
+	
+	
